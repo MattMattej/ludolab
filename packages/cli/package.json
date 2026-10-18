@@ -1,0 +1,14 @@
+{
+  "name": "@tabletest/cli",
+  "version": "0.1.0",
+  "type": "module",
+  "bin": { "tabletest": "./dist/index.js" },
+  "main": "./dist/index.js",
+  "scripts": { "build": "tsc -b" },
+  "dependencies": {
+    "@tabletest/core": "workspace:*",
+    "@tabletest/games": "workspace:*",
+    "@tabletest/players": "workspace:*",
+    "@tabletest/sim": "workspace:*"
+  }
+}

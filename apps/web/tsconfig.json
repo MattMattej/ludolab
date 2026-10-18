@@ -1,0 +1,19 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "composite": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "rootDir": ".",
+    "outDir": "types",
+    "types": ["vite/client"],
+    "tsBuildInfoFile": "node_modules/.cache/tsconfig.tsbuildinfo"
+  },
+  "references": [
+    { "path": "../../packages/core" },
+    { "path": "../../packages/games" },
+    { "path": "../../packages/players" },
+    { "path": "../../packages/render" }
+  ],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "vite.config.ts"]
+}
